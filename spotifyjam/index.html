@@ -1,3 +1,27 @@
-<script>
-    window.location.href = SPOTIFY_JAM;
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Poker Night</title>
+
+    <script>
+        const SPOTIFY_JAM = "https://drive.google.com/file/d/1ff7iEYrczMZmUMAnEziz7Q99FA6GqJ9S/view?usp=sharing";
+
+        window.location.replace(SPOTIFY_JAM);
+    </script>
+</head>
+
+<body>
+    <p>Redirecting to the Spotify Jam...</p>
+
+    <p>
+        If you aren't redirected automatically,
+        <a id="fallback" href="#">click here</a>.
+    </p>
+
+    <script>
+        document.getElementById("fallback").href = SPOTIFY_JAM;
+    </script>
+</body>
+</html>
